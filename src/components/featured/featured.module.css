@@ -46,6 +46,8 @@
   border: none;
   border-radius: 5px;
   width: max-content;
+  background-color: #efefef;
+  color: black;
 }
 
 @media screen and (max-width: 1280px) {
