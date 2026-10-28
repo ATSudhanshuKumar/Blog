@@ -1,0 +1,25 @@
+.title {
+  background-color: coral;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 700px;
+  margin: 40px auto;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.heading {
+  font-weight: 600;
+}
+
+.content a {
+  color: coral;
+  text-decoration: underline;
+}
