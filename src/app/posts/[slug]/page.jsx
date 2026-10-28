@@ -3,9 +3,10 @@ import styles from "./singlePage.module.css";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import Comments from "@/components/comments/Comments";
+import { BASE_URL } from "@/utils/constants";
 
 const getData = async (slug) => {
-  const res = await fetch(`http://localhost:3000/api/posts/${slug}`, {
+  const res = await fetch(`${BASE_URL}/api/posts/${slug}`, {
     cache: "no-store",
   });
 

@@ -2,10 +2,11 @@ import React from "react";
 import styles from "./featured.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import { BASE_URL } from "@/utils/constants";
 
 const getLatestPost = async () => {
   try {
-    const res = await fetch("http://localhost:3000/api/posts?page=1&limit=1", {
+    const res = await fetch(`${BASE_URL}/api/posts?page=1&limit=1`, {
       cache: "no-store",
     });
 

@@ -2,11 +2,11 @@ import React from "react";
 import styles from "./cardList.module.css";
 import Pagination from "../pagination/Pagination";
 import Card from "../card/Card";
-import { POST_PER_PAGE } from "@/utils/constants";
+import { POST_PER_PAGE, BASE_URL } from "@/utils/constants";
 
 const getData = async (page, cat, limit) => {
   const res = await fetch(
-    `http://localhost:3000/api/posts?page=${page}&cat=${cat || ""}&limit=${limit}`,
+    `${BASE_URL}/api/posts?page=${page}&cat=${cat || ""}&limit=${limit}`,
     {
       cache: "no-store",
     }
